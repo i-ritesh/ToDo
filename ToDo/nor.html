@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <style>
+        .btn-primary {
+            color: #fff;
+            background-color: #fd890d;
+            border-color: #fd890d;
+        }
+
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #1dd7a2;
+            border-color: #2beac6;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #fd890d;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <div class="container my-3">
+        <h1>To Do List!</h1>
+        <div class="card">
+            <div class="form-group">
+                <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                <label for="exampleFormControlTextarea1"></label>
+            </div>
+
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+
+                <button href="#" class="btn btn-primary" id="addBtn">Add To List</button>
+
+            </div>
+        </div>
+        <hr>
+        <h1>My List!</h1>
+        <hr>
+        <div id="code" class="row container-fluid">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
